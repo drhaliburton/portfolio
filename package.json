@@ -1,7 +1,14 @@
 {
-  "name": "react-portfolio",
-  "version": "0.1.0",
+  "name": "rebsume",
+  "version": "1.0.0",
   "private": true,
+  "description": "Resume for Rebecca Haliburton, Software Developer",
+  "license": "MIT",
+  "author": {
+    "name": "Rebecca Haliburton",
+    "email": "haliburtonre@gmail.com"
+  },
+  "homepage": "https://drhaliburton.github.io/react-portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -11,6 +18,7 @@
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "eslint": "^8.24.0",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -23,7 +31,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "git subtree push --prefix dist origin gh-pages"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
