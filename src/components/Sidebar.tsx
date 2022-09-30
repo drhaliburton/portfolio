@@ -29,10 +29,6 @@ const SidebarLayout = styled.div`
   }
 `
 
-const ListItem = styled.div`
-
-`
-
 const Sidebar = ({ scrollRef }: { scrollRef: MutableRefObject<any> }) => {
   const { title, subtitle, email, github, preferredTechnologies, strengths, linkedIn } = sidebar
   return (

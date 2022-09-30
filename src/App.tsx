@@ -33,7 +33,7 @@ const Page = styled.div`
   }
 
   @media print {
-    max-width: 640px;
+    margin: 32px;
 
     img { 
       display: none;
