@@ -32,8 +32,12 @@ const Page = styled.div`
      }
   }
 
+  @media screen and (max-width: 650px) {
+    margin: 16px;
+  }
+
   @media print {
-    margin: 32px;
+    margin: 0 16px;
 
     img { 
       display: none;

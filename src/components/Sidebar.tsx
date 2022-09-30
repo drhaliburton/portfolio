@@ -15,6 +15,20 @@ const SidebarLayout = styled.div`
   height: 100%;
   padding: 0 16px 0 24px;
 
+  @media screen and (max-width: 650px) {
+    position: initial;
+    top: inherit;
+    left: inherit;
+    bottom: inherit;
+    top: inherit;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    img { 
+      display: none;
+    }
+  }
+
   @media print {
     position: initial;
     top: inherit;
@@ -24,7 +38,7 @@ const SidebarLayout = styled.div`
     width: 100%;
     height: 100%;
     padding: 0;
-    margin: 24px 0;
+    margin: 18px 0;
     text-align: center;
   }
 `

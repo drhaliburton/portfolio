@@ -14,7 +14,17 @@ const ResumeLayout = styled.div`
   margin-left: 60px;
   background-color: white;
 
+  @media screen and (max-width: 650px) {
+    width: 100%;
+    position: inherit;
+    left: inherit;
+    margin: 0;
+    margin-left: 0;
+    padding: 0;
+  }
+
   @media print {
+    max-width: inherit;
     width: 100%;
     position: inherit;
     left: inherit;
