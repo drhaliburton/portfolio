@@ -5,16 +5,17 @@ const { sidebar, summary, stack, education, experience } = {
     title: "Rebecca Haliburton",
     subtitle: "Full-Stack Software Developer",
     email: "haliburtonre@gmail.com",
-    github: "drhaliburton",
+    github: "https://github.com/drhaliburton",
+    linkedIn: "https://ca.linkedin.com/in/rhaliburton",
     preferredTechnologies: ['React', 'Typescript', 'Node.js', 'Graphql/Apollo', 'Jest/Cypress'],
     strengths: [
       "Collaborating with Product & Design",
-      "Automated testing",
-      "UX/UI design ",
-      "Process & documentation",
+      "automated testing",
+      "Product & Project management",
+      "process and documentation",
     ],
   },
-  summary: "Senior Software Developer with an obsession for clean code, refactoring, and automated testing. I am experienced as a full-stack engineer, but my expertise is on the front-end (React/Typescript/Graphql), and working closely with Product + Design. I\"m looking to join a mission driven organization with passionate, fun people.",
+  summary: "Senior Software Developer with an obsession for clean code, refactoring, and automated testing. I am experienced as a full-stack engineer, but my expertise is with JavaScript/React, and working closely with Product + Design. I'm looking to join a mission driven organization with passionate, fun people.",
   stack: {
     languages: "JavaScript (React, Typescript), GraphQL/Apollo, Node.js, Scala, Golang, SQL",
     tools: "Cypress, Jest/React Testing Library, AWS Serverless Lambdas, Styled Components, Webpack, CircleCI/Github Workflows",
@@ -75,11 +76,11 @@ const { sidebar, summary, stack, education, experience } = {
   ],
   experience: [
     {
-      title: "Full-Stack Web Developer",
+      title: "Full-Stack Software Engineer",
       org: "Bench Accounting",
       url: "https: //www.bench.co",
       subtitle: "September 2019 - Present",
-      content: "Bench is the world's largest online bookkeeping service. I work closely with the product teams to develop new features to improve and automate accounting workflows, contributing to both the internal & client-facing applications. This includes working across the stack, predominantly building with React (Typescript), GraphQL/Apollo, Node.js, and AWS serverless lambdas.",
+      content: "Bench is an online bookkeeping and financial data processing service. I work closely with product to develop new features, improving and automating accounting workflows for both the internal & client-facing applications. This includes working across the stack, predominantly building with React (Typescript), GraphQL/Apollo, Node.js, and AWS services.",
     },
     {
       title: "Web Developer",
