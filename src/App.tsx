@@ -10,7 +10,7 @@ const Page = styled.div`
   }
 
   h1 {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 6px;
     font-weight: 600;
 
@@ -33,6 +33,8 @@ const Page = styled.div`
   }
 
   @media print {
+    max-width: 640px;
+
     img { 
       display: none;
     }
@@ -40,6 +42,11 @@ const Page = styled.div`
     button {
       display: none;
     }
+
+    #sidebar-content {
+      display: none;
+    }
+
   }
 `
 

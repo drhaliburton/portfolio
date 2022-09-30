@@ -1,6 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const TitleWrapper = styled.div`
+  margin: 12px 0;
+`
+
 const Divider = styled.div`
   text-align: left;
   text-transform: uppercase;
@@ -8,7 +12,7 @@ const Divider = styled.div`
   font-size: 14px;
   font-weight: 600;
   overflow: hidden;
-  margin-bottom: 12px;
+  margin: 12px 0;
 
   &::after {
     -webkit-box-sizing: border-box;

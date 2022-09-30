@@ -4,6 +4,7 @@ import { sidebar } from '../data'
 import styled from 'styled-components';
 import Title from './Title';
 import DownloadBtn from './DowloadBtn';
+import Spacer from './Spacer';
 
 const SidebarLayout = styled.div`
   position: fixed;
@@ -13,6 +14,19 @@ const SidebarLayout = styled.div`
   width: 320px;
   height: 100%;
   padding: 0 16px 0 24px;
+
+  @media print {
+    position: initial;
+    top: inherit;
+    left: inherit;
+    bottom: inherit;
+    top: inherit;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 24px 0;
+    text-align: center;
+  }
 `
 
 const ListItem = styled.div`
@@ -27,14 +41,17 @@ const Sidebar = ({ scrollRef }: { scrollRef: MutableRefObject<any> }) => {
       <h2>{subtitle}</h2>
       <h3><a href={"mailto:" + email} target="_blank" rel="noreferrer">{email}</a></h3>
       <a href={github} target="_blank" rel="noreferrer">Github</a> | <a href={linkedIn} target="_blank" rel="noreferrer">LinkedIn</a>
-      <br /><br />
-      <DownloadBtn />
-      <br />
-      <Title title="Preferred technologies" />
-      {preferredTechnologies.join(', ')}.
-      <br /><br />
-      <Title title="Strengths" />
-      {strengths.join(', ')}.
+      <div id="sidebar-content">
+        <DownloadBtn />
+        <Spacer />
+        <Title title="Preferred technologies" />
+        {preferredTechnologies.join(', ')}.
+        <Spacer />
+        <Title title="Strengths" />
+        {strengths.join(', ')}.
+      </div>
+
+
       <Computer scrollRef={scrollRef} />
     </SidebarLayout>
   );

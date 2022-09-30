@@ -2,15 +2,26 @@ import React, { MutableRefObject } from 'react';
 import styled from 'styled-components';
 import { summary, stack, education, experience } from '../data'
 import Experience from './Experience';
+import Spacer from './Spacer';
 import Title from './Title';
 
 const ResumeLayout = styled.div`
-  width: 630px;
+  max-width: 630px;
+  width: 100%;
   position: absolute;
   left: 320px;
-  padding: 32px 16px;
+  padding: 16px;
   margin-left: 60px;
   background-color: white;
+
+  @media print {
+    width: 100%;
+    position: inherit;
+    left: inherit;
+    margin: 0;
+    margin-left: 0;
+    padding: 0;
+  }
 
   h1 {
     font-size: 18px;
@@ -31,12 +42,13 @@ const Resume = ({ scrollRef }: { scrollRef: MutableRefObject<any> }) => {
       <Title title="Summary" />
       <p>{summary}</p>
       <p>
-        <b>Languages:</b> {stack.languages}.<br />< br />
+        <b>Languages:</b> {stack.languages}.<br /><br />
         <b>Tools:</b> {stack.tools}.
       </p>
-      <br />
+      <Spacer />
       <Title title="Experience" />
       {experience.map((data) => <Experience key={data.title} experience={data} />)}
+      <Spacer />
       <Title title="Education" />
       {education.map((data) => <Experience key={data.title} experience={data} />)}
     </ResumeLayout>
