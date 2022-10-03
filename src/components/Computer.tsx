@@ -1,23 +1,27 @@
-import React, { useState, useEffect, useCallback, MutableRefObject } from 'react'
+import React, { useState, useEffect, MutableRefObject } from 'react'
 import styled from 'styled-components'
 
 const ComputerWrapper = styled.div`
-  position: absolute;
-  bottom: 16px;
-  max-width: 280px;
+  text-align: center;
 
    > img {
-    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+
+    @media screen and (max-height: 600px) {
+      position: relative;
+    }
    }
 `
+
 const getImagePath = (imagePath: string) => require('../assets/' + imagePath)
 
 const Computer = ({ scrollRef }: { scrollRef: MutableRefObject<any> }) => {
   const [imageInt, setImageInt] = useState(1)
 
   const handleScroll = () => {
-    console.log(scrollRef)
-
     const scrollPos = Math.round(
       (window.scrollY / scrollRef.current.clientHeight) * 8 + 1
     );
@@ -28,9 +32,12 @@ const Computer = ({ scrollRef }: { scrollRef: MutableRefObject<any> }) => {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
-    // return window.removeEventListener('scroll', handleScroll);
   }, [window])
 
-  return (<ComputerWrapper><img src={getImagePath('comp' + imageInt + '.png')} /></ComputerWrapper>)
+  return (
+    <ComputerWrapper>
+      <img src={getImagePath('comp' + imageInt + '.png')} />
+    </ComputerWrapper>
+  )
 }
 export default Computer;

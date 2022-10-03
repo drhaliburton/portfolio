@@ -14,6 +14,7 @@ const SidebarLayout = styled.div`
   width: 320px;
   height: 100%;
   padding: 0 16px 0 24px;
+  overflow: scroll;
 
   @media screen and (max-width: 650px) {
     position: initial;
@@ -21,6 +22,7 @@ const SidebarLayout = styled.div`
     left: inherit;
     bottom: inherit;
     top: inherit;
+    overflow: inherit;
     width: 100%;
     height: 100%;
     padding: 0;
@@ -60,7 +62,7 @@ const Sidebar = ({ scrollRef }: { scrollRef: MutableRefObject<any> }) => {
         <Title title="Strengths" />
         {strengths.join(', ')}.
       </div>
-
+      <Spacer />
 
       <Computer scrollRef={scrollRef} />
     </SidebarLayout>
