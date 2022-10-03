@@ -12,10 +12,10 @@ const { sidebar, summary, stack, education, experience } = {
       "Collaborating with Product & Design",
       "mentoring junior developers",
       "project management",
-      "process, and documentation",
+      "process and documentation",
     ],
   },
-  summary: "Senior Software Developer with an obsession for clean code, product design, and automated testing. I am experienced as a full-stack engineer, with expertise is in building scalable, responsive front-end apps. I'm looking to join a mission driven organization with passionate, fun people.",
+  summary: "Senior Software Developer with an obsession for clean code, product design, and automated testing. I am experienced as a full-stack engineer, with expertise in building scalable, responsive front-end apps. I'm looking to join a mission driven organization with passionate, fun people.",
   stack: {
     languages: "JavaScript (React, Typescript), GraphQL/Apollo, Node.js, Scala, SQL",
     tools: "Cypress, Jest/React Testing Library, AWS Serverless Lambdas, Styled Components, Webpack, CircleCI/Github Workflows",

@@ -37,6 +37,7 @@ const SidebarLayout = styled.div`
     left: inherit;
     bottom: inherit;
     top: inherit;
+    overflow: inherit;
     width: 100%;
     height: 100%;
     padding: 0;
