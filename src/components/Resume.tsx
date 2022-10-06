@@ -6,7 +6,7 @@ import Spacer from './Spacer';
 import Title from './Title';
 
 const ResumeLayout = styled.div`
-  max-width: 630px;
+  max-width: 680px;
   width: 100%;
   position: absolute;
   left: 320px;
@@ -14,7 +14,7 @@ const ResumeLayout = styled.div`
   margin-left: 60px;
   background-color: white;
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 700px) {
     width: 100%;
     position: inherit;
     left: inherit;

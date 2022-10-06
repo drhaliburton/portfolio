@@ -16,7 +16,7 @@ const SidebarLayout = styled.div`
   padding: 0 16px 0 24px;
   overflow: scroll;
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 700px) {
     position: initial;
     top: inherit;
     left: inherit;

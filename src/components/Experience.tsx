@@ -8,7 +8,7 @@ const Experience = ({ experience }: { experience: Record<string, any> }) => {
   const { title, org, url, subtitle, content } = experience;
   return (
     <ExperienceWrapper>
-      <h1>{title}{org ? <> - <a href={url}>{org}</a></> : undefined}</h1>
+      <h1>{title}{org ? <> - <a href={url} target="_blank" rel="noreferrer">{org}</a></> : undefined}</h1>
       <h2>{subtitle}</h2>
       <p>{content}</p>
     </ExperienceWrapper>

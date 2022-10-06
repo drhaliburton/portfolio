@@ -22,11 +22,16 @@ const Computer = ({ scrollRef }: { scrollRef: MutableRefObject<any> }) => {
   const [imageInt, setImageInt] = useState(1)
 
   const handleScroll = () => {
-    const scrollPos = Math.round(
-      (window.scrollY / scrollRef.current.clientHeight) * 8 + 1
+    const viewportHeight = window.visualViewport?.height || 0
+    const scrollPos = window.scrollY + viewportHeight
+    let newImageInt = Math.ceil(
+      (scrollPos / scrollRef.current.clientHeight) * 8
     );
-    if (scrollPos !== imageInt) {
-      setImageInt(scrollPos);
+    if (newImageInt > 8) newImageInt = 8
+    if (newImageInt < 1) newImageInt = 1
+
+    if (newImageInt !== imageInt) {
+      setImageInt(newImageInt);
     }
   }
 

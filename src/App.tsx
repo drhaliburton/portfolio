@@ -32,7 +32,7 @@ const Page = styled.div`
      }
   }
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 700px) {
     margin: 16px;
   }
 
