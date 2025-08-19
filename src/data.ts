@@ -118,8 +118,7 @@ const { sidebar, summary, stack, education, experience }: Resume = {
       org: 'Regrow Ag',
       url: 'https://regrow.ag',
       subtitle: "March 2023 - Present",
-      content: "Regrow an agriculture resilience platform, where farmers can manage their practices and generate carbon credits from satelite monitored results. My role at Regrow has been replatforming the MRV (measure, report, verify) experience, rewriting the front-end codebase, implementing a graphql backend-for-frontend, and rewriting the backend endpoints to support a new performant user experience. In tandem, I maintained the legacy application, implementing full-slice features in the Typescript, React, GraphQL, Node.js, Python and Go services.",
-    },
+content: "Regrow is an agriculture resilience platform, where farmers can manage their practices and generate carbon credits from satellite monitored results. My role at Regrow has been replatforming the MRV (measure, report, verify) experience, rewriting the front-end codebase, implementing a GraphQL backend-for-frontend, and rewriting the backend endpoints to support a new performant user experience. In tandem, I maintained the legacy application, implementing full-slice features in the Typescript, React, GraphQL, Node.js, Python and Go services.",    },
     {
       title: "Full-Stack Software Engineer",
       org: "Bench Accounting",

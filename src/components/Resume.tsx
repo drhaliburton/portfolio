@@ -10,8 +10,8 @@ const ResumeLayout = styled.div`
   width: 100%;
   position: absolute;
   left: 340px;
-  padding: 16px;
-  margin-left: 60px;
+  padding: 12px 24px;
+  margin-left: 48px;
   background-color: white;
 
   @media screen and (max-width: 700px) {
