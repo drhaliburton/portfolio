@@ -1,25 +1,63 @@
 export { sidebar, summary, stack, education, experience };
 
-const { sidebar, summary, stack, education, experience } = {
+
+type Project = {
+  title: string;
+  img: string;
+  url: string;
+  skills?: string;
+  content: string;
+}
+
+export type ExperienceType = {
+  title: string;
+  org?: string;
+  url: string;
+  subtitle: string;
+  content: string;
+  projects?: Project[];
+}
+type Resume = {
+  sidebar: {
+    title: string;
+    subtitle: string;
+    email: string;
+    github: string;
+    linkedIn: string;
+    preferredTechnologies: string[];
+    strengths: string[];
+  };
+  summary: string;
+  stack: {
+    languages: string;
+    tools: string;
+    spoken: string;
+  };
+  education: ExperienceType[];
+  experience: ExperienceType[];
+};
+
+const { sidebar, summary, stack, education, experience }: Resume = {
   sidebar: {
     title: "Rebecca Haliburton",
-    subtitle: "Full-Stack Software Developer",
+    subtitle: "Senior Full-Stack Developer",
     email: "haliburtonre@gmail.com",
     github: "https://github.com/drhaliburton",
     linkedIn: "https://ca.linkedin.com/in/rhaliburton",
     preferredTechnologies: ['React', 'Typescript', 'Node.js', 'Graphql/Apollo', 'Jest/Cypress'],
     strengths: [
-      "Collaborating with Product & Design",
-      "mentoring junior developers",
-      "project management",
-      "process and documentation",
+      "Architecting lightweight and performant solutions", 
+      "Working independently across the stack",
+      "Refining requirements with product",
+      "Refactoring legacy code for scale",
+      "Implementing efficient engineering workflows",
     ],
   },
-  summary: "Senior Software Developer with an obsession for clean code, product design, and automated testing. I am experienced as a full-stack engineer, with expertise in building scalable, responsive front-end apps. I'm looking to join a mission driven organization with passionate, fun people.",
+  summary: "Senior Software Developer with an obsession for clean code, product design, and simple scalable architecture. I am experienced as a full-stack engineer, with expertise in building efficient, well-tested application, as well as refactoring legacy codebases for performance and readability. I'm looking to join a mission driven organization with passionate, fun people.",
   stack: {
-    languages: "JavaScript (React, Typescript), GraphQL/Apollo, Node.js, Scala, SQL",
-    tools: "Cypress, Jest/React Testing Library, AWS Serverless Lambdas, Styled Components, Webpack, CircleCI/Github Workflows",
-    spoken: "English, French",
+    languages: "JavaScript (React, Typescript), GraphQL, Node.js, Python, Scala, SQL",
+    tools: "AI tooling (Augment, Copilot, Claude), Playwright/Cypress, Jest/RTL, Pytest, Material UI, Storybook, Swagger, Docker, AWS, Sentry, CircleCI/Github Actions",
+    spoken: "English, French, un poco de Español",
   },
   education: [
     {
@@ -76,6 +114,13 @@ const { sidebar, summary, stack, education, experience } = {
   ],
   experience: [
     {
+      title: "Senior Software Engineer",
+      org: 'Regrow Ag',
+      url: 'https://regrow.ag',
+      subtitle: "January 2024 - Present",
+      content: "Regrow an agriculture resilience platform, where farmers can manage their practices and generate carbon credits from satelite monitored results. My role at Regrow has been replatforming the MRV (measure, report, verify) experience, rewriting the front-end codebase, implementing a graphql backend-for-frontend, and rewriting the backend endpoints to support a new performant user experience. In tandem, we maintained the legacy application, implementing full-slice features in the Typescript, React, GraphQL, Node.js, Python and Go services.",
+    },
+    {
       title: "Full-Stack Software Engineer",
       org: "Bench Accounting",
       url: "https://www.bench.co",
@@ -92,6 +137,7 @@ const { sidebar, summary, stack, education, experience } = {
     {
       title: "Freelance Web Developer & Marketing Consultant",
       subtitle: "September 2017 - September 2019",
+      url: "https://www.linkedin.com/in/rhaliburton/",
       content: "Worked with clients to help grow their businesses through marketing consulting, building web apps and desigining user expeirences to achieve their product growth goals. This includes web asset re-designs, building analytics tools, providing SEO + communications audits and general growth advice.",
       projects: [
         {

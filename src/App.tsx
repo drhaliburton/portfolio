@@ -6,13 +6,17 @@ import Resume from './components/Resume'
 const Page = styled.div`
   a {
     color: inherit;
-    text-decoration: none;
   }
 
   h1 {
     font-size: 20px;
     margin-bottom: 6px;
-    font-weight: 600;
+       > a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+     }
 
   }
 
@@ -21,15 +25,13 @@ const Page = styled.div`
     font-weight: 500;
     margin-top: 0;
     margin-bottom: 4px;
+
   }
 
   h3 {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 0;
-     > a {
-      text-decoration: none;
-     }
   }
 
   @media screen and (max-width: 700px) {

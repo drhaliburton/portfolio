@@ -6,10 +6,10 @@ import Spacer from './Spacer';
 import Title from './Title';
 
 const ResumeLayout = styled.div`
-  max-width: 680px;
+  max-width: 70ch;
   width: 100%;
   position: absolute;
-  left: 320px;
+  left: 340px;
   padding: 16px;
   margin-left: 60px;
   background-color: white;

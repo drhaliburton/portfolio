@@ -11,10 +11,14 @@ const SidebarLayout = styled.div`
   top: 0;
   left: 0;
   bottom: 0;
-  width: 320px;
+  width: 340px;
   height: 100%;
   padding: 0 16px 0 24px;
   overflow: scroll;
+
+  ul {
+    padding: 0 20px;
+  }
 
   @media screen and (max-width: 700px) {
     position: initial;
@@ -47,7 +51,7 @@ const SidebarLayout = styled.div`
 `
 
 const Sidebar = ({ scrollRef }: { scrollRef: MutableRefObject<any> }) => {
-  const { title, subtitle, email, github, preferredTechnologies, strengths, linkedIn } = sidebar
+  const { title, subtitle, email, github, strengths, linkedIn } = sidebar
   return (
     <SidebarLayout>
       <h1>{title}</h1>
@@ -57,11 +61,12 @@ const Sidebar = ({ scrollRef }: { scrollRef: MutableRefObject<any> }) => {
       <div id="sidebar-content">
         <DownloadBtn />
         <Spacer />
-        <Title title="Preferred technologies" />
-        {preferredTechnologies.join(', ')}.
-        <Spacer />
         <Title title="Strengths" />
-        {strengths.join(', ')}.
+        <ul>
+          {strengths.map((strength: string, index: number) => (
+            <li key={index}>{strength}</li>
+          ))}
+        </ul>
       </div>
       <Spacer />
 

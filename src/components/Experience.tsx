@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import { ExperienceType } from '../data';
+
 
 const ExperienceWrapper = styled.div`
   margin: 18px 0 32px 0;
 `
-const Experience = ({ experience }: { experience: Record<string, any> }) => {
+const Experience = ({ experience }: { experience: ExperienceType }) => {
   const { title, org, url, subtitle, content } = experience;
   return (
     <ExperienceWrapper>
