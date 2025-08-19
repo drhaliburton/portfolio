@@ -53,7 +53,7 @@ const { sidebar, summary, stack, education, experience }: Resume = {
       "Implementing efficient engineering workflows",
     ],
   },
-  summary: "Senior Software Developer with an obsession for clean code, product design, and simple scalable architecture. I am experienced as a full-stack engineer, with expertise in building efficient, well-tested application, as well as refactoring legacy codebases for performance and readability. I'm looking to join a mission driven organization with passionate, fun people.",
+  summary: "Senior Software Developer with an obsession for clean code, product design, and simple scalable architecture. I am experienced as a full-stack engineer, with expertise in building efficient, well-tested applications, as well as refactoring legacy codebases for performance and readability. I'm looking to join a mission driven organization with passionate, fun people.",
   stack: {
     languages: "JavaScript (React, Typescript), GraphQL, Node.js, Python, Scala, SQL",
     tools: "AI tooling (Augment, Copilot, Claude), Playwright/Cypress, Jest/RTL, Pytest, Material UI, Storybook, Swagger, Docker, AWS, Sentry, CircleCI/Github Actions",
@@ -118,7 +118,7 @@ const { sidebar, summary, stack, education, experience }: Resume = {
       org: 'Regrow Ag',
       url: 'https://regrow.ag',
       subtitle: "January 2024 - Present",
-      content: "Regrow an agriculture resilience platform, where farmers can manage their practices and generate carbon credits from satelite monitored results. My role at Regrow has been replatforming the MRV (measure, report, verify) experience, rewriting the front-end codebase, implementing a graphql backend-for-frontend, and rewriting the backend endpoints to support a new performant user experience. In tandem, we maintained the legacy application, implementing full-slice features in the Typescript, React, GraphQL, Node.js, Python and Go services.",
+      content: "Regrow an agriculture resilience platform, where farmers can manage their practices and generate carbon credits from satelite monitored results. My role at Regrow has been replatforming the MRV (measure, report, verify) experience, rewriting the front-end codebase, implementing a graphql backend-for-frontend, and rewriting the backend endpoints to support a new performant user experience. In tandem, I maintained the legacy application, implementing full-slice features in the Typescript, React, GraphQL, Node.js, Python and Go services.",
     },
     {
       title: "Full-Stack Software Engineer",
