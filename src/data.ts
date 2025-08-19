@@ -117,14 +117,14 @@ const { sidebar, summary, stack, education, experience }: Resume = {
       title: "Senior Software Engineer",
       org: 'Regrow Ag',
       url: 'https://regrow.ag',
-      subtitle: "January 2024 - Present",
+      subtitle: "March 2023 - Present",
       content: "Regrow an agriculture resilience platform, where farmers can manage their practices and generate carbon credits from satelite monitored results. My role at Regrow has been replatforming the MRV (measure, report, verify) experience, rewriting the front-end codebase, implementing a graphql backend-for-frontend, and rewriting the backend endpoints to support a new performant user experience. In tandem, I maintained the legacy application, implementing full-slice features in the Typescript, React, GraphQL, Node.js, Python and Go services.",
     },
     {
       title: "Full-Stack Software Engineer",
       org: "Bench Accounting",
       url: "https://www.bench.co",
-      subtitle: "September 2019 - Present",
+      subtitle: "September 2019 - March 2023",
       content: "Bench is an online bookkeeping and financial data processing service. I work closely with product to develop new features, improving and automating accounting workflows for both the internal & client-facing applications. This includes working across the stack, predominantly building with React (Typescript), GraphQL/Apollo, Node.js, and AWS services.",
     },
     {
