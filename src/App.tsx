@@ -11,13 +11,12 @@ const Page = styled.div`
   h1 {
     font-size: 20px;
     margin-bottom: 6px;
-       > a {
+    > a {
       text-decoration: none;
       &:hover {
         text-decoration: underline;
       }
-     }
-
+    }
   }
 
   h2 {

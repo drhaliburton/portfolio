@@ -53,7 +53,8 @@ const Resume = ({ scrollRef }: { scrollRef: MutableRefObject<any> }) => {
       <p>{summary}</p>
       <p>
         <b>Languages:</b> {stack.languages}.<br /><br />
-        <b>Tools:</b> {stack.tools}.
+        <b>Tools:</b> {stack.tools}.<br /><br />
+        <b>Spoken:</b> {stack.spoken}.
       </p>
       <Spacer />
       <Title title="Experience" />
