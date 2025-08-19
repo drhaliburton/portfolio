@@ -6,10 +6,10 @@ import Spacer from './Spacer';
 import Title from './Title';
 
 const ResumeLayout = styled.div`
-  max-width: 680px;
+  max-width: 70ch;
   width: 100%;
   position: absolute;
-  left: 320px;
+  left: 340px;
   padding: 16px;
   margin-left: 60px;
   background-color: white;
@@ -53,7 +53,8 @@ const Resume = ({ scrollRef }: { scrollRef: MutableRefObject<any> }) => {
       <p>{summary}</p>
       <p>
         <b>Languages:</b> {stack.languages}.<br /><br />
-        <b>Tools:</b> {stack.tools}.
+        <b>Tools:</b> {stack.tools}.<br /><br />
+        <b>Spoken:</b> {stack.spoken}.
       </p>
       <Spacer />
       <Title title="Experience" />
