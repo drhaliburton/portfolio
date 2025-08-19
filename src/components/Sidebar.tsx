@@ -13,7 +13,7 @@ const SidebarLayout = styled.div`
   bottom: 0;
   width: 340px;
   height: 100%;
-  padding: 0 16px 0 24px;
+  padding: 12px 16px 0 24px;
   overflow: scroll;
 
   ul {
@@ -56,8 +56,10 @@ const Sidebar = ({ scrollRef }: { scrollRef: MutableRefObject<any> }) => {
     <SidebarLayout>
       <h1>{title}</h1>
       <h2>{subtitle}</h2>
-      <h3><a href={"mailto:" + email} target="_blank" rel="noreferrer">{email}</a></h3>
-      <a href={github} target="_blank" rel="noreferrer">Github</a> | <a href={linkedIn} target="_blank" rel="noreferrer">LinkedIn</a>
+      <h3>
+        <a href={"mailto:" + email} target="_blank" rel="noreferrer">{email}</a><br />
+        <a href={github} target="_blank" rel="noreferrer">Github</a> | <a href={linkedIn} target="_blank" rel="noreferrer">LinkedIn</a>
+      </h3>
       <div id="sidebar-content">
         <DownloadBtn />
         <Spacer />

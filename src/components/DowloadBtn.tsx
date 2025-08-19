@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 
 const BtnWrapper = styled.div`
-  margin: 18px 0;
+  margin: 16px 0;
 
   > button {
     background-color: black;

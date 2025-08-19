@@ -10,7 +10,8 @@ const Page = styled.div`
 
   h1 {
     font-size: 20px;
-    margin-bottom: 6px;
+    margin-top: 12px;
+    margin-bottom: 0;
     > a {
       text-decoration: none;
       &:hover {
@@ -20,17 +21,15 @@ const Page = styled.div`
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     margin-top: 0;
-    margin-bottom: 4px;
-
+    margin-bottom: 0;
   }
 
   h3 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    margin-bottom: 0;
   }
 
   @media screen and (max-width: 700px) {
