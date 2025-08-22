@@ -118,7 +118,7 @@ const { sidebar, summary, stack, education, experience }: Resume = {
       org: 'Regrow Ag',
       url: 'https://regrow.ag',
       subtitle: "March 2023 - Present",
-content: "Regrow is an agriculture resilience platform, where farmers can manage their practices and generate carbon credits from satellite monitored results. I was responsible for replatforming the MRV (measure, report, verify) experience, rewriting the front-end codebase, implementing a GraphQL backend-for-frontend, and rewriting the backend endpoints to support a new performant user experience. In tandem, I maintained the legacy application, implementing full-slice features in the Typescript, React, GraphQL, Node.js, Python and Go services.",    },
+content: "Regrow is an agriculture resilience platform, where farmers can manage their practices and generate carbon credits from satellite monitored results. I was responsible for replatforming the MRV (measure, report, verify) experience, rewriting the front-end codebase, implementing a GraphQL backend-for-frontend, and refactoring the backend endpoints to support a new performant user experience. In tandem, I maintained the legacy application, implementing full-slice features in the Typescript, React, GraphQL, Node.js, Python and Go services.",    },
     {
       title: "Full-Stack Software Engineer",
       org: "Bench Accounting",
@@ -131,7 +131,7 @@ content: "Regrow is an agriculture resilience platform, where farmers can manage
       org: "Starling Minds",
       url: "https://www.starlingminds.com/",
       subtitle: "June 2018 - June 2019",
-      content: "Starling minds is a mobile cognitive behavioural therapy tool. I replatformed an existing application into a mobile product using Vue.js and Cordova. I lead the design and implementation of the front-end, including the mobile-first UI design, automated testing, caching & service workers, build + deployment and code reviews for junior team members.",
+      content: "Starling minds is a mobile cognitive behavioural therapy tool. I lead the design and implementation of the front-end, while replatforming the existing application into a mobile product using Vue.js and Cordova. This included implementing the mobile-first UI design, automated testing, caching & service workers, build + deployment, and code reviews for junior team members.",
     },
     {
       title: "Freelance Web Developer & Marketing Consultant",
@@ -165,7 +165,7 @@ content: "Regrow is an agriculture resilience platform, where farmers can manage
       org: "New District",
       url: "http://www.newdistrict.ca/",
       subtitle: "August 2017 - December 2017",
-      content: "New District is a e-commerce platform focused on wine sales, subscriptions and delivery services across BC. During my 4 month internship, I was responsible for maintaining and enhancing the existing Angular app, using Jade and SASS with Foundation for styling and Jasmine/Protractor for testing.",
+      content: "New District is an e-commerce platform focused on wine sales, subscriptions and delivery services across BC. During my 4 month internship, I maintained and enhancing the existing Angular app, using Jade and SASS with Foundation for styling and Jasmine/Protractor for testing.",
     },
     {
       title: "Marketing Manager",
