@@ -48,16 +48,16 @@ const { sidebar, summary, stack, education, experience }: Resume = {
     strengths: [
       "Architecting lightweight and performant solutions", 
       "Working independently across the stack",
-      "Refining requirements with product",
+      "Refining requirements with the product team",
       "Refactoring legacy code for scale",
       "Implementing efficient engineering workflows",
     ],
   },
-  summary: "Senior Software Developer with an obsession for clean code, product design, and simple scalable architecture. I am experienced as a full-stack engineer, with expertise in building efficient, well-tested applications, as well as refactoring legacy codebases for performance and readability. I'm looking to join a mission driven organization with passionate, fun people.",
+  summary: "Senior Software Developer with an obsession for clean code, product design, and simple scalable architecture. Experienced as a full-stack engineer, with expertise in building efficient, well-tested applications, as well as refactoring legacy codebases for performance and readability. Looking to join a mission driven organization with passionate, fun people.",
   stack: {
     languages: "JavaScript (React, Typescript), GraphQL, Node.js, Python, Scala, SQL",
     tools: "AI tooling (Augment, Copilot, Claude), Playwright/Cypress, Jest/RTL, Pytest, Material UI, Storybook, Swagger, Docker, AWS, Sentry, CircleCI/Github Actions",
-    spoken: "English, French, un poco de Español",
+    spoken: "English, French, beginner Spanish",
   },
   education: [
     {
@@ -118,20 +118,20 @@ const { sidebar, summary, stack, education, experience }: Resume = {
       org: 'Regrow Ag',
       url: 'https://regrow.ag',
       subtitle: "March 2023 - Present",
-content: "Regrow is an agriculture resilience platform, where farmers can manage their practices and generate carbon credits from satellite monitored results. My role at Regrow has been replatforming the MRV (measure, report, verify) experience, rewriting the front-end codebase, implementing a GraphQL backend-for-frontend, and rewriting the backend endpoints to support a new performant user experience. In tandem, I maintained the legacy application, implementing full-slice features in the Typescript, React, GraphQL, Node.js, Python and Go services.",    },
+content: "Regrow is an agriculture resilience platform, where farmers can manage their practices and generate carbon credits from satellite monitored results. I was responsible for replatforming the MRV (measure, report, verify) experience, rewriting the front-end codebase, implementing a GraphQL backend-for-frontend, and rewriting the backend endpoints to support a new performant user experience. In tandem, I maintained the legacy application, implementing full-slice features in the Typescript, React, GraphQL, Node.js, Python and Go services.",    },
     {
       title: "Full-Stack Software Engineer",
       org: "Bench Accounting",
       url: "https://www.bench.co",
       subtitle: "September 2019 - March 2023",
-      content: "Bench is an online bookkeeping and financial data processing service. I work closely with product to develop new features, improving and automating accounting workflows for both the internal & client-facing applications. This includes working across the stack, predominantly building with React (Typescript), GraphQL/Apollo, Node.js, and AWS services.",
+      content: "Bench is an online bookkeeping and financial data processing service. I worked closely with product to develop new features, improving and automating accounting workflows for both the internal & client-facing applications. This included working across the stack, predominantly building with React (Typescript), GraphQL/Apollo, Node.js, and AWS services.",
     },
     {
       title: "Web Developer",
       org: "Starling Minds",
       url: "https://www.starlingminds.com/",
       subtitle: "June 2018 - June 2019",
-      content: "I was responsible for replatforming an existing application into a mobile product using Vue.js and Cordova. I lead the design and implementation of the front-end, including the mobile-first UI design, automated testing, caching & service workers, build + deployment and code reviews for junior team members.",
+      content: "Starling minds is a mobile cognitive behavioural therapy tool. I replatformed an existing application into a mobile product using Vue.js and Cordova. I lead the design and implementation of the front-end, including the mobile-first UI design, automated testing, caching & service workers, build + deployment and code reviews for junior team members.",
     },
     {
       title: "Freelance Web Developer & Marketing Consultant",
@@ -172,7 +172,7 @@ content: "Regrow is an agriculture resilience platform, where farmers can manage
       org: "Lighthouse Labs",
       url: "http://www.lighthouselabs.ca/",
       subtitle: "September 2015 - June 2017",
-      content: "I was responsible for the creation and curation of content while implementing strategies for student recruitment. I worked with the development and branding teams to create features for the custom CRM and admissions portals, wrote content and copy, and implemented the digital marketing strategies for Facebook, AdWords, email campaigns and other social platforms.",
+      content: "Lightouse Labs is a coding bootcamp focused on full-stack web development. I was responsible for the creation and curation of content while implementing strategies for student recruitment. I worked with the development and branding teams to create features for the custom CRM and admissions portals, wrote content and copy, and implemented the digital marketing strategies for Facebook, AdWords, email campaigns and other social platforms.",
       projects: [
         {
           title: "Project Management",
