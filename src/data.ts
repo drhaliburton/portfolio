@@ -55,8 +55,7 @@ const {sidebar, summary, stack, education, experience, projects}: Resume = {
     ],
   },
   summary:
-    'Senior Software Developer with an obsession for clean code, product design, and simple scalable architecture. Experienced as a full-stack engineer who enjoys driving architecture decisions independently — from data model to UI — building efficient, well-tested applications, and refactoring legacy systems for performance and readability. Looking to join a mission driven organization with passionate, fun people.',
-  stack: {
+   'Senior Software Developer with an obsession for clean code, product design, and simple scalable architecture. I thrive working independently across the stack, from design to implementation, building performant, accessible, and well-tested applications. Looking to join a mission driven organization with passionate, fun people.',    stack: {
     languages: 'JavaScript (React, TypeScript), GraphQL, Node.js, Python, Go, Scala, SQL (MySQL, Postgres)',
     tools:
       'AI tooling (Claude), Playwright, Jest/RTL, Vitest, Apollo/GraphQL Codegen, Storybook, Material UI (DataGrid), Chart.js, FastAPI, Firebase, Docker, AWS, Sentry',
@@ -231,7 +230,7 @@ const {sidebar, summary, stack, education, experience, projects}: Resume = {
     //   subtitle: "January 2015 - September 2015",
     //   content: "The Ecology Action Centre is a non-profit organization in Halifax, NS aimed around creating a more sustainable community. I assisted with creating a strategy for donor communications and designed branding materials.",
     // },
-  ],
+  ],  
   projects: [
     {
       title: 'Soft Sheets',
