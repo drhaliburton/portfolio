@@ -10,7 +10,7 @@ const Experience = ({ experience }: { experience: ExperienceType }) => {
   const { title, org, url, subtitle, content } = experience;
   return (
     <ExperienceWrapper>
-      <h1>{title}{org ? <> - <a href={url} target="_blank" rel="noreferrer">{org}</a></> : undefined}</h1>
+      <h1><a href={url} target="_blank" rel="noreferrer">{title}{org ? <> - {org}</> : undefined}</a></h1>
       <h2>{subtitle}</h2>
       <p>{content}</p>
     </ExperienceWrapper>
