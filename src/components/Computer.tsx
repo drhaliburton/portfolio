@@ -9,6 +9,7 @@ const ComputerWrapper = styled.div`
     bottom: 0;
     left: 0;
     width: 250px;
+    padding-bottom: 5px;
 
     @media screen and (max-height: 600px) {
       position: relative;
