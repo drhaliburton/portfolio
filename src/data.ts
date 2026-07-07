@@ -1,4 +1,4 @@
-export {sidebar, summary, stack, education, experience};
+export {sidebar, summary, stack, education, experience, projects};
 
 type Project = {
   title: string;
@@ -35,16 +35,17 @@ type Resume = {
   };
   education: ExperienceType[];
   experience: ExperienceType[];
+  projects: ExperienceType[]
 };
 
-const {sidebar, summary, stack, education, experience}: Resume = {
+const {sidebar, summary, stack, education, experience, projects}: Resume = {
   sidebar: {
     title: 'Rebecca Haliburton',
     subtitle: 'Senior Full-Stack Developer',
     email: 'haliburtonre@gmail.com',
     github: 'https://github.com/drhaliburton',
     linkedIn: 'https://ca.linkedin.com/in/rhaliburton',
-    preferredTechnologies: ['React', 'Typescript', 'Node.js', 'Graphql/Apollo', 'Jest/Cypress'],
+    preferredTechnologies: ['Typescript', 'Node.js', 'Python', 'React', 'Graphql' ],
     strengths: [
       'Architecting lightweight and performant solutions',
       'Working independently across the stack',
@@ -54,12 +55,12 @@ const {sidebar, summary, stack, education, experience}: Resume = {
     ],
   },
   summary:
-    'Senior Software Developer with an obsession for clean code, product design, and simple scalable architecture. Experienced as a full-stack engineer, with expertise in building efficient, well-tested applications, as well as refactoring legacy codebases for performance and readability. Looking to join a mission driven organization with passionate, fun people.',
+    'Senior Software Developer with an obsession for clean code, product design, and simple scalable architecture. Experienced as a full-stack engineer, with expertise in building efficient, well-tested applications, as well as refactoring for performance and readability. Looking to join a mission driven organization with passionate, fun people.',
   stack: {
     languages: 'JavaScript (React, Typescript), GraphQL, Node.js, Python, Scala, SQL',
     tools:
-      'AI tooling (Augment, Copilot, Claude), Playwright/Cypress, Jest/RTL, Pytest, Material UI, Storybook, Swagger, Docker, AWS, Sentry, CircleCI/Github Actions',
-    spoken: 'English, French, beginner Spanish',
+      'AI tooling (Claude), Playwright, Jest/React Testing Library, Material UI, Chart.js, Docker, AWS, Sentry',
+    spoken: 'English, French, basic Spanish',
   },
   education: [
     {
@@ -123,12 +124,12 @@ const {sidebar, summary, stack, education, experience}: Resume = {
   ],
   experience: [
     {
-      title: 'Senior Software Engineer',
+      title: 'Senior Full-Stack Software Engineer',
       org: 'Regrow Ag',
       url: 'https://regrow.ag',
       subtitle: 'March 2023 - Present',
       content:
-        'Regrow is an agriculture resilience platform, where farmers can manage their practices and generate carbon credits from satellite monitored results. I was responsible for rebuilding the MRV (measure, report, verify) experience; rewriting the front-end codebase, implementing a GraphQL backend-for-frontend, and refactoring the backend endpoints to support a new performant user experience. In tandem, I maintained the legacy application, building full-slice features in the Typescript, React, GraphQL, Node.js, Python and Go services.',
+        'Regrow is an agriculture resilience platform, where farmers can manage their practices and generate carbon credits from satellite monitored results. I was responsible for re-architecting the MRV (measure, report, verify) data-entry experience; rewriting the front-end codebase, implementing a GraphQL backend-for-frontend, a MUI-based design system, and refactoring the python backend to support a new performant user experience. In tandem, I was maintaining the legacy application and adding full-slice features in the Typescript, React, GraphQL, Node.js, Python and Go services.',
     },
     {
       title: 'Full-Stack Software Engineer',
@@ -136,7 +137,7 @@ const {sidebar, summary, stack, education, experience}: Resume = {
       url: 'https://www.bench.co',
       subtitle: 'September 2019 - March 2023',
       content:
-        'Bench is an online bookkeeping and financial data processing service. I worked closely with the product team to develop new features, improving and automating accounting workflows for both the internal & client-facing applications. This included working across the stack, predominantly building with React (Typescript), GraphQL/Apollo, Node.js, and AWS services.',
+        'Bench is an online bookkeeping and financial data processing service. I worked closely with the product team, improving and automating accounting workflows for both the internal & client-facing applications. This included working across the stack, predominantly building with React (Typescript), GraphQL/Apollo, Node.js, and AWS services.',
     },
     {
       title: 'Web Developer',
@@ -272,5 +273,14 @@ const {sidebar, summary, stack, education, experience}: Resume = {
     //   subtitle: "January 2015 - September 2015",
     //   content: "The Ecology Action Centre is a non-profit organization in Halifax, NS aimed around creating a more sustainable community. I assisted with creating a strategy for donor communications and designed branding materials.",
     // },
-  ],
+  ],  
+  projects: [
+    {
+      title: 'Softsheets',
+      url: 'https://softsheets.ca',
+      subtitle: '2026 - Present',
+      content:
+        'Softsheets is a recreational softball team management tool which auto-generates your weekly lineup and batting order based on players skills and preferences. Managers can set player position preferences, batting power and foot-speed which are used to optimize the lineup. Managers can also track game score sheets, which automatically sum up each players ongoing and per-game stats.',
+    },
+  ]
 };
