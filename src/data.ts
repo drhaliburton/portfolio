@@ -35,7 +35,7 @@ type Resume = {
   };
   education: ExperienceType[];
   experience: ExperienceType[];
-  projects: ExperienceType[]
+  projects: ExperienceType[];
 };
 
 const {sidebar, summary, stack, education, experience, projects}: Resume = {
@@ -59,7 +59,7 @@ const {sidebar, summary, stack, education, experience, projects}: Resume = {
   stack: {
     languages: 'JavaScript (React, TypeScript), GraphQL, Node.js, Python, Go, Scala, SQL (MySQL, Postgres)',
     tools:
-      'AI tooling (Claude), Playwright, Jest/RTL, Vitest, Apollo/GraphQL Codegen, Storybook, Material UI, Chart.js, Firebase, Docker, AWS, Sentry',
+      'AI tooling (Claude), Playwright, Jest/RTL, Vitest, Apollo/GraphQL Codegen, Storybook, Material UI (DataGrid), Chart.js, FastAPI, Firebase, Docker, AWS, Sentry',
     spoken: 'English, French, basic Spanish',
   },
   education: [
@@ -231,7 +231,7 @@ const {sidebar, summary, stack, education, experience, projects}: Resume = {
     //   subtitle: "January 2015 - September 2015",
     //   content: "The Ecology Action Centre is a non-profit organization in Halifax, NS aimed around creating a more sustainable community. I assisted with creating a strategy for donor communications and designed branding materials.",
     // },
-  ],  
+  ],
   projects: [
     {
       title: 'Soft Sheets',

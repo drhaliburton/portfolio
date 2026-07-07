@@ -1,6 +1,6 @@
 import React, { MutableRefObject } from 'react';
 import styled from 'styled-components';
-import { summary, stack, education, experience, projects } from '../data'
+import { summary, stack, education, experience, projects } from '../data';
 import Experience from './Experience';
 import Spacer from './Spacer';
 import Title from './Title';
@@ -59,8 +59,8 @@ const Resume = ({ scrollRef }: { scrollRef: MutableRefObject<any> }) => {
       <Spacer />
       <Title title="Experience" />
       {experience.map((data) => <Experience key={data.title} experience={data} />)}
-        <Spacer />
-      <Title title="Side projects" />
+      <Spacer />
+      <Title title="Side Projects" />
       {projects.map((data) => <Experience key={data.title} experience={data} />)}
       <Spacer />
       <Title title="Education" />
