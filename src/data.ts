@@ -47,19 +47,19 @@ const {sidebar, summary, stack, education, experience, projects}: Resume = {
     linkedIn: 'https://ca.linkedin.com/in/rhaliburton',
     preferredTechnologies: ['Typescript', 'Node.js', 'Python', 'React', 'Graphql' ],
     strengths: [
-      'Architecting lightweight and performant solutions',
+      'Architecting lightweight, performant, and extensible solutions',
       'Working independently across the stack',
-      'Refining requirements with the product team',
       'Refactoring legacy code for scale',
-      'Implementing efficient engineering workflows',
+      'Raising unit and e2e testing standards',
+      'Refining requirements with the product team',
     ],
   },
   summary:
-    'Senior Software Developer with an obsession for clean code, product design, and simple scalable architecture. Experienced as a full-stack engineer, with expertise in building efficient, well-tested applications, as well as refactoring for performance and readability. Looking to join a mission driven organization with passionate, fun people.',
+    'Senior Software Developer with an obsession for clean code, product design, and simple scalable architecture. Experienced as a full-stack engineer who enjoys driving architecture decisions independently — from data model to UI — building efficient, well-tested applications, and refactoring legacy systems for performance and readability. Looking to join a mission driven organization with passionate, fun people.',
   stack: {
-    languages: 'JavaScript (React, Typescript), GraphQL, Node.js, Python, Scala, SQL',
+    languages: 'JavaScript (React, TypeScript), GraphQL, Node.js, Python, Go, Scala, SQL (MySQL, Postgres)',
     tools:
-      'AI tooling (Claude), Playwright, Jest/React Testing Library, Material UI, Chart.js, Docker, AWS, Sentry',
+      'AI tooling (Claude), Playwright, Jest/RTL, Vitest, Apollo/GraphQL Codegen, Storybook, Material UI, Chart.js, Firebase, Docker, AWS, Sentry',
     spoken: 'English, French, basic Spanish',
   },
   education: [
@@ -129,7 +129,7 @@ const {sidebar, summary, stack, education, experience, projects}: Resume = {
       url: 'https://regrow.ag',
       subtitle: 'March 2023 - Present',
       content:
-        'Regrow is an agriculture resilience platform, where farmers can manage their practices and generate carbon credits from satellite monitored results. I was responsible for re-architecting the MRV (measure, report, verify) data-entry experience; rewriting the front-end codebase, implementing a GraphQL backend-for-frontend, a MUI-based design system, and refactoring the python backend to support a new performant user experience. In tandem, I was maintaining the legacy application and adding full-slice features in the Typescript, React, GraphQL, Node.js, Python and Go services.',
+        'Regrow is an agriculture resilience platform, where farmers can manage their practices and generate carbon credits from satellite monitored results. I drove the architecture for a full re-platform of the MRV data-entry product; leading design of the React/TypeScript frontend, adding a new Node/GraphQL backend-for-frontend, and rebuilding the supporting Python backend. I was also responsible for building out the internal design system, used across the MRV product suite, alongside adding new full-slice features across the Typescript, React, GraphQL, Node.js, Python and Go services.',
     },
     {
       title: 'Full-Stack Software Engineer',
@@ -137,7 +137,7 @@ const {sidebar, summary, stack, education, experience, projects}: Resume = {
       url: 'https://www.bench.co',
       subtitle: 'September 2019 - March 2023',
       content:
-        'Bench is an online bookkeeping and financial data processing service. I worked closely with the product team, improving and automating accounting workflows for both the internal & client-facing applications. This included working across the stack, predominantly building with React (Typescript), GraphQL/Apollo, Node.js, and AWS services.',
+        'Bench is an online bookkeeping and financial data processing service. I worked closely with the product team across the stack, improving and automating accounting workflows for both the internal & client-facing applications, predominantly building with React (Typescript), GraphQL/Apollo, Node.js, and AWS services.',
     },
     {
       title: 'Web Developer',
@@ -145,30 +145,14 @@ const {sidebar, summary, stack, education, experience, projects}: Resume = {
       url: 'https://www.starlingminds.com/',
       subtitle: 'June 2018 - June 2019',
       content:
-        'Starling minds is a mobile cognitive behavioural therapy tool. I lead the design and implementation of the front-end, while replatforming the existing application into a mobile product using Vue.js and Cordova. This included implementing the mobile-first UI design, automated testing, caching & service workers, build + deployment, and code reviews for junior team members.',
+        'Starling minds is a mobile cognitive behavioural therapy tool. I led the design and implementation of the front-end, re-platforming the existing application into a mobile product using Vue.js and Cordova — including mobile-first UI design, automated testing, caching/service workers, build and deployment, and code review for junior engineers on the team.',
     },
     {
       title: 'Freelance Web Developer & Marketing Consultant',
       subtitle: 'September 2017 - September 2019',
       url: 'https://www.linkedin.com/in/rhaliburton/',
       content:
-        'Worked with clients to help grow their businesses through marketing consulting, building web apps and designing user experiences to achieve their product growth goals. This includes web asset re-designs, building analytics tools, providing SEO + communications audits and general growth advice.',
-      projects: [
-        {
-          title: 'CMPNY',
-          img: 'cmpny.png',
-          url: 'https://www.cmpny.com/plans',
-          content:
-            'Adopted an existing codebase to re-design the pricing pages, updated branding to fit existing materials, provided SEO support and created a landing page using PHP to generate new leads.',
-        },
-        {
-          title: 'Tea Runners',
-          img: 'tearunners.jpg',
-          url: 'http://www.tearunners.com/',
-          content:
-            'Created an Analytics Dashboard from scratch using Vue.js, Node, MongoDB with hosting Heroku, which interacts with their e-commerce API to display upcoming expected shipments.',
-        },
-      ],
+        'Built web apps and analytics tools for small-business clients, combining full-stack development with marketing/growth consulting — including a from-scratch analytics dashboard (Vue.js/Node/MongoDB) for Tea Runners, web asset redesigns, and SEO/communications audits.',
     },
     {
       title: 'Web Development Mentor',
@@ -176,7 +160,7 @@ const {sidebar, summary, stack, education, experience, projects}: Resume = {
       url: 'http://www.lighthouselabs.ca/',
       subtitle: 'May 2018 - February 2019',
       content:
-        'Mentored the full-time Lighthouse Labs Web Development Bootcamp, instructing students in the fundamentals of full-stack web development. Assisted with the JavaScript, SQL and Ruby-based curriculum, providing pair-programming and debugging.',
+        'Mentored full-time bootcamp students in full-stack fundamentals (JavaScript, SQL, Ruby) through pair-programming and debugging sessions.',
     },
     {
       title: 'Front-End Developer',
@@ -184,7 +168,7 @@ const {sidebar, summary, stack, education, experience, projects}: Resume = {
       url: 'http://www.newdistrict.ca/',
       subtitle: 'August 2017 - December 2017',
       content:
-        'New District is an e-commerce platform focused on wine sales, subscriptions and delivery services across BC. During my 4 month internship, I maintained and enhanced the existing Angular app, using Jade and SASS with Foundation for styling and Jasmine/Protractor for testing.',
+        '4-month internship maintaining and enhancing an Angular e-commerce app (wine sales/subscriptions/delivery) for New District, using Jade/SASS and Jasmine/Protractor for testing.',
     },
     {
       title: 'Marketing Manager',
@@ -192,33 +176,7 @@ const {sidebar, summary, stack, education, experience, projects}: Resume = {
       url: 'http://www.lighthouselabs.ca/',
       subtitle: 'September 2015 - June 2017',
       content:
-        'Lightouse Labs is a coding bootcamp focused on full-stack web development. I was responsible for the creation and curation of content while implementing strategies for student recruitment. I worked with the development and branding teams to create features for the custom CRM and admissions portals, wrote content and copy, and implemented the digital marketing strategies for Facebook, AdWords, email campaigns and other social platforms.',
-      projects: [
-        {
-          title: 'Project Management',
-          img: 'website.jpg',
-          url: 'http://www.lighthouselabs.ca/blog',
-          skills: 'SEO, copywriting, digital campaigns, feature design.',
-          content:
-            'Managed the website and application process in conjunction with the Development and Design teams. This included copywriting/SEO and wireframing new features for the custom-built CMS to automate marketing workflow and better analyse applicant data.',
-        },
-        {
-          title: 'Online Coding Courses',
-          img: 'courses.png',
-          url: 'http://www.lighthouse-labs.thinkific.com/',
-          skills: 'Content creation, copywriting, digital marketing.',
-          content:
-            'Created online courses using curriculum from HTML, CSS, JavaScript and iOS development workshops, gaining over 1500 registrants within a month of launching with ~4% conversion rate.',
-        },
-        {
-          title: 'Events & Digital Marketing',
-          img: 'html500.jpg',
-          url: 'http://www.thehtml500.com/',
-          skills: 'Event marketing, social media management, digital campaigns.',
-          content:
-            'Was responsible for the promotion for countless tech-centric events, including workshops, meetups and hackathons. Most notably, I put in place a digital marketing strategy that resulted in over 7000 registrants for the HTML500.',
-        },
-      ],
+        'Led content and recruitment marketing for the bootcamp, partnering with the dev/design teams to build features for the custom CRM/admissions portal and running digital campaigns (Facebook, AdWords, email) that drove student enrollment.',
     },
     // {
     //   title: "Marketing Coordinator",
@@ -276,11 +234,11 @@ const {sidebar, summary, stack, education, experience, projects}: Resume = {
   ],  
   projects: [
     {
-      title: 'Softsheets',
+      title: 'Soft Sheets',
       url: 'https://softsheets.ca',
       subtitle: '2026 - Present',
       content:
-        'Softsheets is a recreational softball team management tool which auto-generates your weekly lineup and batting order based on players skills and preferences. Managers can set player position preferences, batting power and foot-speed which are used to optimize the lineup. Managers can also track game score sheets, which automatically sum up each players ongoing and per-game stats.',
+        'Soft Sheets is an automated lineup and roster manager for slo-pitch softball coaches, using a custom bipartite-matching engine to generate fair field-position assignments. The algorithm balances player preferences, gender-minimum requirements, and bench rotation, plus a separate batting-order optimizer sequencing hitters by power and speed. Soft sheets also includes score-sheet tracking with automatic per-game and season stat roll-ups.',
     },
   ]
 };
