@@ -237,7 +237,7 @@ const {sidebar, summary, stack, education, experience, projects}: Resume = {
       url: 'https://softsheets.ca',
       subtitle: '2026 - Present',
       content:
-        'Soft Sheets is an automated lineup and roster manager for slo-pitch softball coaches, using a custom bipartite-matching engine to generate fair field-position assignments. The algorithm balances player preferences, gender-minimum requirements, and bench rotation, plus a separate batting-order optimizer sequencing hitters by power and speed. Soft sheets also includes score-sheet tracking with automatic per-game and season stat roll-ups.',
+        'Soft Sheets is an automated lineup and roster manager for slo-pitch softball coaches to generate fair field-position assignments. The algorithm balances player preferences, gender-minimum requirements, and bench rotation, plus a separate batting-order optimizer sequencing hitters by power and speed. Soft sheets also includes score-sheet tracking with automatic per-game and season stat roll-ups.',
     },
   ]
 };
